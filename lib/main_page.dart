@@ -8,12 +8,16 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int count = 0;
+  int number = 10;
   String _text = '';
   final _textController = TextEditingController();
 
   @override
   void dispose() {
+    number = 11; // 전역변수
+    int i = 10; // 지역변수
+    i = 11;
+    print(i);
     _textController.dispose();
     super.dispose();
   }
