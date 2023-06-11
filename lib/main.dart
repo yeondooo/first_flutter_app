@@ -53,12 +53,24 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('홈'),
       ),
       body: Center(
-        child: Text(
-          '$count',
-          style: TextStyle(
-            color: Colors.red,
-            fontSize: 70,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              '숫자',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 40,
+              ),
+            ),
+            Text(
+              '$count',
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 70,
+              ),
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
