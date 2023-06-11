@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/ios_style_screen.dart';
 import 'package:first_flutter_app/main_page.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MainPage(),
+      home: const IosStyleScreen(),
     );
   }
 }
