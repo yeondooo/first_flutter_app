@@ -48,7 +48,7 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
               Text(
-                '$count',
+                '$number',
                 style: TextStyle(
                   color: Colors.red,
                   fontSize: 70,
@@ -124,7 +124,7 @@ class _MainPageState extends State<MainPage> {
         onPressed: () {
           // 화면 갱신
           setState(() {
-            count++;
+            number++;
           });
         },
         child: Icon(Icons.add),
