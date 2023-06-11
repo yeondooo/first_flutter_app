@@ -57,6 +57,18 @@ class _MainPageState extends State<MainPage> {
                 print(text);
               },
             ),
+            Image.network(
+              'https://blog.kakaocdn.net/dn/rIYaJ/btriQ6hL8tM/2k6nmswXNka1ykfhO7G3WK/img.png',
+              width: 100,
+              height: 100,
+              fit: BoxFit.cover,
+            ),
+            Image.asset(
+              'assets/pic.jpeg',
+              width: 100,
+              height: 100,
+              fit: BoxFit.cover,
+            ),
           ],
         ),
       ),
