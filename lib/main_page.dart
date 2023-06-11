@@ -56,14 +56,28 @@ class _MainPageState extends State<MainPage> {
                 onPressed: () {},
                 child: Text('OutlinedButton'),
               ),
-              TextField(
-                decoration: InputDecoration(
-                  labelText: '글자',
-                  border: OutlineInputBorder(),
-                ),
-                onChanged: (text) {
-                  print(text);
-                },
+              Row(
+                children: [
+                  Expanded(
+                    flex: 3,
+                    child: TextField(
+                      decoration: InputDecoration(
+                        labelText: '글자',
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (text) {
+                        print(text);
+                      },
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text('login'),
+                    ),
+                  ),
+                ],
               ),
               Image.network(
                 'https://blog.kakaocdn.net/dn/rIYaJ/btriQ6hL8tM/2k6nmswXNka1ykfhO7G3WK/img.png',
