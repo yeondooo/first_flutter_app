@@ -27,6 +27,13 @@ class _MainPageState extends State<MainPage> {
                 fontSize: 40,
               ),
             ),
+            Text(
+              '$count',
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 70,
+              ),
+            ),
             ElevatedButton(
               onPressed: () {
                 print('ElevatedButton');
@@ -41,12 +48,14 @@ class _MainPageState extends State<MainPage> {
               onPressed: () {},
               child: Text('OutlinedButton'),
             ),
-            Text(
-              '$count',
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 70,
+            TextField(
+              decoration: InputDecoration(
+                labelText: '글자',
+                border: OutlineInputBorder(),
               ),
+              onChanged: (text) {
+                print(text);
+              },
             ),
           ],
         ),
